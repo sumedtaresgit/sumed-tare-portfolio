@@ -100,4 +100,3 @@ Experienced in building scalable BI solutions using Power BI, Azure Databricks, 
 🎓 Education
 
 - **MBA** (2026) – Mizoram University  
-- **BSc** (2012) – Karnataka State Open University
