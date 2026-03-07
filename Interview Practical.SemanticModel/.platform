@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Interview Practical"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5e59f713-3895-b33d-44e5-a00ec6921dc5"
+  }
+}

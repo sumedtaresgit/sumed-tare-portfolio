@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"type\":2,\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a53a0d41047d838ce040",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"aeebe3d652620523e40a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":352.6598435484682,\"y\":52.1442570227307,\"z\":0,\"width\":681.9919931657147,\"height\":569.4701753798222,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Date Table.Date.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"financials.Gross Sale\"},{\"queryRef\":\"select\"},{\"queryRef\":\"select1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Gross Sale\"},\"Name\":\"financials.Gross Sale\",\"NativeReferenceName\":\"Gross Sale\"},{\"NativeVisualCalculation\":{\"Language\":\"dax\",\"Expression\":\"RUNNINGSUM([Gross Sale])\",\"Name\":\"Running sum\"},\"Name\":\"select\",\"NativeReferenceName\":\"Running sum\"},{\"NativeVisualCalculation\":{\"Language\":\"dax\",\"Expression\":\"\\r\\nSUMX(\\r\\n    WINDOW(-2, 0),\\r\\n    [Gross Sale]\\r\\n)\",\"Name\":\"3Months Rolling\"},\"Name\":\"select1\",\"NativeReferenceName\":\"3Months Rolling\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date Table.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridVerticalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Tahoma'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"financials\"}},\"Property\":\"Gross Sale\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#666666'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"financials.Gross Sale\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"select\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#666666'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"select\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"SelectRef\":{\"ExpressionName\":\"select1\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#666666'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"select1\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"159.722182150067D\"}}}},\"selector\":{\"metadata\":\"select\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"162.46661858008042D\"}}}},\"selector\":{\"metadata\":\"select1\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"158.34995242257645D\"}}}},\"selector\":{\"metadata\":\"financials.Gross Sale\"}}],\"columnHeaders\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}}}],\"columnFormatting\":[{\"properties\":{},\"selector\":{\"metadata\":\"financials.Gross Sale\"}},{\"properties\":{},\"selector\":{\"metadata\":\"select1\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 569.47,
+          "width": 681.99,
+          "x": 352.66,
+          "y": 52.14,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

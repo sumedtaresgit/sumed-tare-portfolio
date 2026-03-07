@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Interview Practical"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a1ddf74b-7c8a-b035-45ca-742e5558f56c"
+  }
+}
